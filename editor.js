@@ -11,10 +11,6 @@ const Editor = {
             console.log(content)
         }
     },
-    mounted() {
-        let trix = this.$refs.trix.editor
-        trix.insertString("håhå!")
-    },
     template: "#editor-template"
 }
 
