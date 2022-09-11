@@ -1,8 +1,13 @@
+import Editor from "./editor.js"
+
 export default {
     data() {
         return {
             message: 'Håhå & hoho!'
         }
     },
-    template: "#message-template"
+    components: {
+        Editor
+    },
+    template: "#app-template"
 }

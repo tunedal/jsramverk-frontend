@@ -9,11 +9,17 @@
   <body>
     <div id="app"></div>
 
-    <template id="message-template">
-      <b>{{ message }}</b>
+    <template id="app-template">
+      <h1>Henrik textredigerare</h1>
+      <p>
+        <b>{{ message }}</b>
+      </p>
+      <editor></editor>
     </template>
 
-    <trix-editor></trix-editor>
+    <template id="editor-template">
+      <trix-editor></trix-editor>
+    </template>
 
     <script type="module">
       import app from "./app.js"
