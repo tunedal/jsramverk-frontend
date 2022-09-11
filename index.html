@@ -13,18 +13,11 @@
     </template>
 
     <script type="module">
+      import app from "./app.js"
       import {
           createApp,
       } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
-
-      createApp({
-          data() {
-              return {
-                  message: 'Håhå & hoho!'
-              }
-          },
-          template: "#message-template"
-      }).mount('#app')
+      createApp(app).mount('#app')
     </script>
   </body>
 </html>
