@@ -7,6 +7,11 @@
   </head>
   <body>
     <div id="app"></div>
+
+    <template id="message-template">
+      <b>{{ message }}</b>
+    </template>
+
     <script type="module">
       import {
           createApp,
@@ -18,7 +23,7 @@
                   message: 'Håhå & hoho!'
               }
           },
-          template: "<b>{{ message }}</b>"
+          template: "#message-template"
       }).mount('#app')
     </script>
   </body>
