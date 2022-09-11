@@ -6,7 +6,7 @@
     <script src="https://unpkg.com/vue@3"></script>
   </head>
   <body>
-    <div id="app">{{ message }}</div>
+    <div id="app"></div>
     <script type="module">
       import {
           createApp,
@@ -17,7 +17,8 @@
               return {
                   message: 'Håhå & hoho!'
               }
-          }
+          },
+          template: "<b>{{ message }}</b>"
       }).mount('#app')
     </script>
   </body>
