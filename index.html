@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>hetu22's jsramverk editor</title>
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">{{ message }}</div>
+    <script>
+      const { createApp } = Vue
+
+      createApp({
+          data() {
+              return {
+                  message: 'Håhå & hoho!'
+              }
+          }
+      }).mount('#app')
+    </script>
+  </body>
+</html>
