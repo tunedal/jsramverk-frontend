@@ -1,13 +1,19 @@
-import Editor from "./editor.js"
+import {Editor, Toolbar} from "./editor.js"
 
 export default {
     data() {
         return {
-            message: 'Håhå & hoho!'
+            heading: "Henriks textredigerare",
+        }
+    },
+    methods: {
+        saveEditorContent() {
+            this.$refs.editor.saveContent()
         }
     },
     components: {
-        Editor
+        Editor,
+        Toolbar,
     },
     template: "#app-template"
 }
