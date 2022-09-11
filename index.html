@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>hetu22's jsramverk editor</title>
-    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="./lib/trix.css">
+    <script type="text/javascript" src="./lib/trix.js"></script>
   </head>
   <body>
     <div id="app"></div>
@@ -12,11 +13,11 @@
       <b>{{ message }}</b>
     </template>
 
+    <trix-editor></trix-editor>
+
     <script type="module">
       import app from "./app.js"
-      import {
-          createApp,
-      } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
+      import {createApp} from "./lib/vue.js"
       createApp(app).mount('#app')
     </script>
   </body>
